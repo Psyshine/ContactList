@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		8EB79ADF23FD5F090039A821 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB79ADE23FD5F090039A821 /* AppDelegate.swift */; };
 		8EB79AE123FD5F090039A821 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB79AE023FD5F090039A821 /* SceneDelegate.swift */; };
-		8EB79AE323FD5F090039A821 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB79AE223FD5F090039A821 /* ViewController.swift */; };
+		8EB79AE323FD5F090039A821 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB79AE223FD5F090039A821 /* DetailViewController.swift */; };
 		8EB79AE623FD5F090039A821 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB79AE423FD5F090039A821 /* Main.storyboard */; };
 		8EB79AE823FD5F120039A821 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EB79AE723FD5F120039A821 /* Assets.xcassets */; };
 		8EB79AEB23FD5F120039A821 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB79AE923FD5F120039A821 /* LaunchScreen.storyboard */; };
+		8EB79AF823FD60870039A821 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB79AF723FD60870039A821 /* ContactTableViewController.swift */; };
+		8EB79AFA23FD60A10039A821 /* FullContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB79AF923FD60A10039A821 /* FullContactTableViewController.swift */; };
+		8EB79AFC23FD62400039A821 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB79AFB23FD62400039A821 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8EB79ADB23FD5F090039A821 /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB79ADE23FD5F090039A821 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EB79AE023FD5F090039A821 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8EB79AE223FD5F090039A821 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8EB79AE223FD5F090039A821 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8EB79AE523FD5F090039A821 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8EB79AE723FD5F120039A821 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EB79AEA23FD5F120039A821 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EB79AEC23FD5F120039A821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EB79AF723FD60870039A821 /* ContactTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
+		8EB79AF923FD60A10039A821 /* FullContactTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullContactTableViewController.swift; sourceTree = "<group>"; };
+		8EB79AFB23FD62400039A821 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		8EB79ADD23FD5F090039A821 /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				8EB79ADE23FD5F090039A821 /* AppDelegate.swift */,
-				8EB79AE023FD5F090039A821 /* SceneDelegate.swift */,
-				8EB79AE223FD5F090039A821 /* ViewController.swift */,
-				8EB79AE423FD5F090039A821 /* Main.storyboard */,
-				8EB79AE723FD5F120039A821 /* Assets.xcassets */,
-				8EB79AE923FD5F120039A821 /* LaunchScreen.storyboard */,
-				8EB79AEC23FD5F120039A821 /* Info.plist */,
+				8EB79AF623FD5F650039A821 /* Models */,
+				8EB79AF423FD5F470039A821 /* ViewControllers */,
+				8EB79AF323FD5F380039A821 /* StoryBoards */,
+				8EB79AF223FD5F240039A821 /* SupportFiles */,
+				8EB79AF523FD5F550039A821 /* Resources */,
 			);
 			path = ContactList;
+			sourceTree = "<group>";
+		};
+		8EB79AF223FD5F240039A821 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8EB79ADE23FD5F090039A821 /* AppDelegate.swift */,
+				8EB79AE023FD5F090039A821 /* SceneDelegate.swift */,
+				8EB79AEC23FD5F120039A821 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		8EB79AF323FD5F380039A821 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				8EB79AE423FD5F090039A821 /* Main.storyboard */,
+				8EB79AE923FD5F120039A821 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		8EB79AF423FD5F470039A821 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8EB79AE223FD5F090039A821 /* DetailViewController.swift */,
+				8EB79AF723FD60870039A821 /* ContactTableViewController.swift */,
+				8EB79AF923FD60A10039A821 /* FullContactTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8EB79AF523FD5F550039A821 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8EB79AE723FD5F120039A821 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8EB79AF623FD5F650039A821 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8EB79AFB23FD62400039A821 /* Contact.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EB79AE323FD5F090039A821 /* ViewController.swift in Sources */,
+				8EB79AFC23FD62400039A821 /* Contact.swift in Sources */,
+				8EB79AF823FD60870039A821 /* ContactTableViewController.swift in Sources */,
+				8EB79AE323FD5F090039A821 /* DetailViewController.swift in Sources */,
 				8EB79ADF23FD5F090039A821 /* AppDelegate.swift in Sources */,
+				8EB79AFA23FD60A10039A821 /* FullContactTableViewController.swift in Sources */,
 				8EB79AE123FD5F090039A821 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DK456C5V8U;
-				INFOPLIST_FILE = ContactList/Info.plist;
+				INFOPLIST_FILE = ContactList/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DK456C5V8U;
-				INFOPLIST_FILE = ContactList/Info.plist;
+				INFOPLIST_FILE = ContactList/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
