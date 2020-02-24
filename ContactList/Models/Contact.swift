@@ -20,23 +20,14 @@ struct Contact {
     
     static func getContacts() -> [Contact] {
         
-        var names = ["Andry", "James", "Roberto", "Sadio", "Mohamed"]
-        var surnames = ["Salah", "Firmino", "Milner", "Robertson", "Mane"]
-        var phones = ["11111", "22222", "33333", "44444", "55555"]
-        var emails = ["email1@me.com",
-                      "email3@me.com",
-                      "email2@me.com",
-                      "email4@me.com",
-                      "email5@me.com"] // Понимаю что массивам здесь не место и нужно вынести их в структуру, но не могу понять, как потом к ним достучаться.
+        let names = DataManage.shared.names.shuffled()
+        let surnames = DataManage.shared.surnames.shuffled()
+        let phones = DataManage.shared.phones.shuffled()
+        let emails = DataManage.shared.emails.shuffled()
+        
         var contacts = [Contact]()
         
-        names.shuffle()
-        surnames.shuffle()
-        emails.shuffle()
-        phones.shuffle()
-        
         for contact in 1..<names.count {
-         
                 let contact = Contact(name: names[contact],
                                       surname: surnames[contact],
                                       phone: phones[contact],

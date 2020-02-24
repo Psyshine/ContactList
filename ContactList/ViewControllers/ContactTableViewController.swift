@@ -22,19 +22,23 @@ class ContactTableViewController: UITableViewController {
     }
     
     // MARK: - UITableView data source
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView,
+                            numberOfRowsInSection section: Int) -> Int {
         return contacts.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "contactCell", for: indexPath)
+    override func tableView(_ tableView: UITableView,
+                            cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "contactCell",
+                                                 for: indexPath)
         let contact = contacts[indexPath.row]
         cell.textLabel?.text = contact.fullName
         return cell
     }
     
     // MARK: - UITableView Delegate
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView,
+                            didSelectRowAt indexPath: IndexPath) {
         let contact = contacts[indexPath.row]
         performSegue(withIdentifier: "detailSegue", sender: contact)
     }

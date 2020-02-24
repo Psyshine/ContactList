@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E5B6EE424041EFB00B85E05 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5B6EE324041EFB00B85E05 /* File.swift */; };
 		8EB79ADF23FD5F090039A821 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB79ADE23FD5F090039A821 /* AppDelegate.swift */; };
 		8EB79AE123FD5F090039A821 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB79AE023FD5F090039A821 /* SceneDelegate.swift */; };
 		8EB79AE323FD5F090039A821 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB79AE223FD5F090039A821 /* DetailViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E5B6EE324041EFB00B85E05 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		8EB79ADB23FD5F090039A821 /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB79ADE23FD5F090039A821 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EB79AE023FD5F090039A821 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				8EB79ADE23FD5F090039A821 /* AppDelegate.swift */,
 				8EB79AE023FD5F090039A821 /* SceneDelegate.swift */,
 				8EB79AEC23FD5F120039A821 /* Info.plist */,
+				8E5B6EE324041EFB00B85E05 /* File.swift */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			files = (
 				8EB79AFC23FD62400039A821 /* Contact.swift in Sources */,
 				8EB79AF823FD60870039A821 /* ContactTableViewController.swift in Sources */,
+				8E5B6EE424041EFB00B85E05 /* File.swift in Sources */,
 				8EB79AE323FD5F090039A821 /* DetailViewController.swift in Sources */,
 				8EB79ADF23FD5F090039A821 /* AppDelegate.swift in Sources */,
 				8EB79AFA23FD60A10039A821 /* FullContactTableViewController.swift in Sources */,
